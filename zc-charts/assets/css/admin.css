@@ -1,0 +1,373 @@
+/**
+ * ZC Charts Admin Styles
+ * Styles for the admin settings page
+ */
+
+/* Settings page wrapper */
+.zc-charts-settings-page {
+    max-width: 800px;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    border-radius: 4px;
+}
+
+.zc-charts-settings-page h1 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 0;
+}
+
+/* Form table adjustments */
+.zc-charts-settings-page .form-table th {
+    width: 200px;
+}
+
+.zc-charts-settings-page .form-table td {
+    padding: 15px 10px;
+}
+
+/* Description text */
+.zc-charts-settings-page .description {
+    margin-top: 5px;
+    color: #666;
+    font-size: 13px;
+}
+
+/* Notice styles */
+.zc-charts-notice {
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-left: 4px solid #00a0d2;
+    background-color: #f9f9f9;
+}
+
+.zc-charts-notice-error {
+    border-left-color: #dc3232;
+    background-color: #fdf8f8;
+}
+
+.zc-charts-notice-success {
+    border-left-color: #46b450;
+    background-color: #f8fff9;
+}
+
+/* API key status */
+.zc-charts-api-key-status {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+.zc-charts-api-key-status.valid {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+}
+
+.zc-charts-api-key-status.invalid {
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    color: #a94442;
+}
+
+/* Test connection result */
+.zc-charts-test-connection-result {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.zc-charts-test-connection-result.success {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+}
+
+.zc-charts-test-connection-result.error {
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    color: #a94442;
+}
+
+/* Shortcode example */
+.zc-charts-shortcode-example {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.zc-charts-shortcode-example code {
+    display: block;
+    margin: 5px 0;
+}
+
+/* Help text */
+.zc-charts-help-text {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Submit buttons */
+.zc-charts-submit-buttons {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Dependency error */
+.zc-charts-dependency-error {
+    background-color: #fff0f0;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.zc-charts-dependency-error h3 {
+    color: #dc3232;
+    margin-top: 0;
+}
+
+.zc-charts-dependency-error p {
+    margin: 10px 0;
+}
+
+.zc-charts-dependency-error .button {
+    margin-top: 10px;
+}
+
+/* Chart preview container */
+.zc-chart-preview-container {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.zc-chart-preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.zc-chart-preview-header h3 {
+    margin: 0;
+}
+
+.zc-chart-preview-content {
+    position: relative;
+}
+
+.zc-chart-preview-content .zc-chart-wrapper {
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.zc-chart-preview-content .zc-chart-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.zc-chart-preview-content .zc-chart-error {
+    padding: 15px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    color: #721c24;
+    margin: 0;
+}
+
+/* Chart container in admin */
+.zc-chart-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 15px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.zc-chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Form elements */
+.zc-charts-settings-page input[type="text"],
+.zc-charts-settings-page input[type="email"],
+.zc-charts-settings-page input[type="url"],
+.zc-charts-settings-page select,
+.zc-charts-settings-page textarea {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .zc-charts-settings-page {
+        padding: 15px;
+    }
+    
+    .zc-charts-settings-page .form-table th {
+        width: 150px;
+    }
+    
+    .zc-charts-settings-page input[type="text"],
+    .zc-charts-settings-page input[type="email"],
+    .zc-charts-settings-page input[type="url"],
+    .zc-charts-settings-page select,
+    .zc-charts-settings-page textarea {
+        max-width: 100%;
+    }
+    
+    .zc-chart-preview-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .zc-chart-container {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .zc-charts-settings-page {
+        margin: 10px 0;
+        padding: 10px;
+    }
+    
+    .zc-chart-container {
+        height: 250px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .zc-charts-settings-page {
+        background: #1e1e1e;
+        border-color: #3c3c3c;
+        color: #ffffff;
+    }
+    
+    .zc-charts-settings-page h1 {
+        border-color: #3c3c3c;
+        color: #ffffff;
+    }
+    
+    .zc-charts-settings-page .form-table th {
+        color: #ffffff;
+    }
+    
+    .zc-charts-settings-page input[type="text"],
+    .zc-charts-settings-page input[type="email"],
+    .zc-charts-settings-page input[type="url"],
+    .zc-charts-settings-page select,
+    .zc-charts-settings-page textarea {
+        background-color: #2d2d2d;
+        border-color: #555;
+        color: #ffffff;
+    }
+    
+    .zc-charts-notice {
+        background-color: #2d2d2d;
+        border-color: #555;
+        color: #ffffff;
+    }
+    
+    .zc-charts-notice-error {
+        background-color: #721c24;
+        border-color: #f5c6cb;
+        color: #f8d7da;
+    }
+    
+    .zc-charts-notice-success {
+        background-color: #3c763d;
+        border-color: #d6e9c6;
+        color: #dff0d8;
+    }
+    
+    .zc-charts-api-key-status {
+        background-color: #2d2d2d;
+        border-color: #555;
+        color: #ffffff;
+    }
+    
+    .zc-charts-api-key-status.valid {
+        background-color: #3c763d;
+        border-color: #d6e9c6;
+        color: #dff0d8;
+    }
+    
+    .zc-charts-api-key-status.invalid {
+        background-color: #721c24;
+        border-color: #f5c6cb;
+        color: #f8d7da;
+    }
+    
+    .zc-charts-test-connection-result.success {
+        background-color: #3c763d;
+        border-color: #d6e9c6;
+        color: #dff0d8;
+    }
+    
+    .zc-charts-test-connection-result.error {
+        background-color: #721c24;
+        border-color: #f5c6cb;
+        color: #f8d7da;
+    }
+    
+    .zc-charts-shortcode-example {
+        background-color: #2d2d2d;
+        border-color: #555;
+        color: #ffffff;
+    }
+    
+    .zc-chart-preview-container {
+        background-color: #2d2d2d;
+        border-color: #555;
+        color: #ffffff;
+    }
+    
+    .zc-chart-preview-content .zc-chart-wrapper {
+        background-color: #1e1e1e;
+        border-color: #555;
+    }
+    
+    .zc-chart-preview-content .zc-chart-loading {
+        background-color: #1e1e1e;
+        border-color: #555;
+        color: #ffffff;
+    }
+    
+    .zc-chart-preview-content .zc-chart-error {
+        background-color: #721c24;
+        border-color: #f5c6cb;
+        color: #f8d7da;
+    }
+    
+    .zc-chart-container {
+        background-color: #1e1e1e;
+        border-color: #555;
+    }
+}
